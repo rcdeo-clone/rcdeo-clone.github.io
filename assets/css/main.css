@@ -217,6 +217,7 @@ main {
             border-radius: 25px;
             display: flex;
             align-items: center;
+            padding-right: 5px;
             & .hide-on-mobile {
                 display: none;
             }
@@ -231,6 +232,7 @@ main {
                 outline: none;
                 flex: 1;
                 width: 80vw;
+                line-height: 24px;
                 &:focus {
                     outline: none;
                 }
@@ -351,6 +353,7 @@ footer {
                 }
                 & input {
                     width: initial;
+                    line-height: 24px;
                 }
             }
         }
