@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="assets/images/google.png"/>
+        
+        <title>Google</title>
+
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/fonts.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body>
+
+        <header>
+            <nav>
+                <ul>
+                    <li class="hide-on-desktop"><img src="assets/svg/notification.svg" alt="Notification"></li>
+                    <li class="link-desktop"><a href="https://mail.google.com">Gmail</a></li>
+                    <li class="link-desktop"><a href="https://www.google.com.br/imghp">Imagens</a></li>
+                    <!-- apps -->
+                    <li><img src="assets/svg/apps.svg" alt="Apps" /></li>
+                    <!-- photo + stroke -->
+                    <li id="profile">
+                        <img src="assets/svg/stroke.svg" alt="Stroke">
+                        <img id="avatar" src="assets/images/photo.jpg" alt="Photo">
+                    </li>
+                </ul>
+                <!-- Escrito apos o <nav> em virtude do header possuir flex-direction: row-reverse -->
+                <div class="hide-on-desktop">
+                    <!-- mobile: menu -->
+                    <button id="btn-mobile-menu">
+                        <img src="assets/svg/menu.svg" alt="Menu" />
+                    </button>
+                    <ul>
+                        <li class="active"> <a href="#">Todas</a></li>
+                        <li><a href="#">Imagens</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- sidebar: menu -->
+            <div id="sidebar-mobile-container" class="hide-on-desktop hide-on-sidebar">
+                <div id="sidebar-mobile-mask" class="sidebar-mask"></div>
+                <div class="sidebar-menu">
+                    <img class="sidebar-logo" src="assets/svg/google.svg" alt="Google" />
+                    <button>
+                        <img src="assets/images/google.png" alt="Google">
+                        <span>Abrir o app</span>
+                    </button>
+                    <ul>
+                        <li><a href="#"><img src="assets/svg/home.svg" alt="Home">Página inicial</a></li>
+                        <li><a href="#"><img src="assets/svg/search_activity.svg" alt="Search Activity">Histórico de pesquisa</a></li>
+                        <li><a href="#"><img src="assets/svg/save.svg" alt="Save">Salvos</a></li>
+                    </ul>
+                    <ul class="border-top">
+                        <li><a href="#"><img src="assets/svg/settings.svg" alt="Settings">Configurações de pesquisa</a></li>
+                        <li><a href="#"><img src="assets/svg/privacy_advisor.svg" alt="Privacy Advisor">Seus dados de pesquisa</a></li>
+                        <li><a href="#"><img src="assets/svg/explicit.svg" alt="Explicit">SafeSearch</a></li>
+                        <li><a href="#"><img src="assets/svg/theme.svg" alt="Theme">Tema escuro: desativado</a></li>
+                        <li><a href="#"><img src="assets/svg/how_search_works.svg" alt="How Search Works">Como funciona a Pesquisa</a></li>
+                        <li><a href="#"><img src="assets/svg/help.svg" alt="Help">Ajuda</a></li>
+                        <li><a href="#"><img src="assets/svg/feedback.svg" alt="Feedback">Enviar feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div>
+                <img id="logo" src="assets/svg/google.svg" alt="Google" />
+                <form action="https://www.google.com.br/search">
+                    <div>
+                        <!-- search -->
+                        <div>
+                            <img src="assets/svg/search.svg" alt="Search" />
+                        </div>
+
+                        <input type="search" name="q" required/>
+
+                        <!-- keyboard -->
+                        <div class="hide-on-mobile">
+                            <img src="assets/svg/keyboard.svg" alt="Keyboard" />
+                        </div>
+                        <!-- microphone -->
+                        <div class="hide-on-mobile">
+                            <img src="assets/svg/microphone.svg" alt="Microphone" />
+                        </div>
+                        <!-- lens -->
+                        <div class="hide-on-mobile">
+                            <img src="assets/svg/lens.svg" alt="Google Lens" />
+                        </div>
+                    </div>
+
+                    <div class="actions">
+                        <button type="submit">Pesquisa Google</button>
+                        <button type="button">Estou com sorte</button>
+                    </div>
+                </form>
+            </div>
+            <section>
+                <ul class="hide-on-desktop">
+                    <li class="mobile-list-header">
+                        <span>Pesquisas em alta</span>
+                        <img src="assets/svg/dots.svg" alt="Dots" />
+                    </li>
+                    <li>
+                        <img src="assets/svg/arrow.svg" alt="Arrow">
+                        <div class="mobile-list-news">
+                            <span>fórmula 1 classificação gp singapura</span>
+                            <span class="mobile-list-text">Grande Prêmio de Singapura</span>
+                        </div>
+                        <img class="mobile-list-image" src="assets/images/singapure-circuit.png" alt="Marina Bay Street Circuit">
+                    </li>
+                    <li>
+                        <img src="assets/svg/arrow.svg" alt="Arrow">
+                        <div class="mobile-list-news">
+                            <span>Grêmio Foot-Ball Porto Alegrense</span>
+                            <span class="mobile-list-text">Clube de futebol</span>
+                        </div>
+                        <img class="mobile-list-image" src="assets/images/gremio-escudo.png" alt="Grêmio Foot-Ball Porto Alegrense
+                        ">
+                    </li>
+                    <li>
+                        <img src="assets/svg/arrow.svg" alt="Arrow">
+                        <span>lula cuba</span>
+                    </li>
+                    <li>
+                        <img src="assets/svg/arrow.svg" alt="Arrow">
+                        <span>loterias resultado lotofacil</span>
+                    </li>
+                    <li>
+                        <img src="assets/svg/arrow.svg" alt="Arrow">
+                        <span>pré olímpico volei feminino</span>
+                    </li>
+                    <li>
+                        <img src="assets/svg/arrow.svg" alt="Arrow">
+                        <span>onde assistir inter de milao x milan</span>
+                    </li>
+                    <li>
+                        <img src="assets/svg/arrow.svg" alt="Arrow">
+                        <span>el chapo guzmán</span>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>Brasil</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Publicidade</a></li>
+                    <li><a href="#">Negócios</a></li>
+                    <li><a href="#">Como funciona a Pesquisa</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Privacidade</a></li>
+                    <li><a href="#">Termos</a></li>
+                    <li><a href="#">Configurações</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-nav-mobile">
+                <ul>
+                    <li>Tema escuro: desativado</li>
+                    <li>Configurações</li>
+                    <li>Privacidade</li>
+                    <li>Termos</li>
+                </ul>
+                <ul>
+                    <li>Publicidade</li>
+                    <li>Negócios</li>
+                    <li>Sobre</li>
+                </ul>
+            </nav>
+        </footer>
+
+        <script src="assets/js/scripts.js"></script>
+    </body>
+</html>
